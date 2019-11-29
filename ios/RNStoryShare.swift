@@ -174,7 +174,7 @@ class RNStoryShare: NSObject{
                 return reject("No Assets", "Background Asset and Sticker Asset are nil", error)
             }
 
-            let backgroundType = RCTConvert.nsurl(config["backgroundType"])
+            let backgroundType = RCTConvert.nsstring(config["backgroundType"])
             let backgroundAsset = RCTConvert.nsurl(config["backgroundAsset"])
             let stickerAsset = RCTConvert.nsurl(config["stickerAsset"])
             let attributionLink: String = RCTConvert.nsString(config["attributionLink"]) ?? ""
