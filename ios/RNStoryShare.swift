@@ -187,10 +187,6 @@ class RNStoryShare: NSObject{
                 let video: SCSDKSnapVideo
 
                 if(type == BASE64){
-                    let data = try Data(contentsOf: backgroundAsset!,
-                                        options: NSData.ReadingOptions(rawValue: 0))
-
-                    let snapImage = UIImage(data: data)
                     video = SCSDKSnapVideo(videoUrl: backgroundAsset!)
                 }else{
                     video = SCSDKSnapVideo(videoUrl: backgroundAsset!)
